@@ -1,0 +1,470 @@
+{
+  "version": "0.9",
+  "engine": "Chromium (Playwright)",
+  "storage": "Injected in-memory Storage test adapter; real navigation is blocked by environment policy. No Safari/WebKit or physical phones tested.",
+  "checks": [
+    {
+      "name": "v082_baseline_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "migration_preserves_people_goals_structures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new_initiatives_empty_after_migration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "three_separate_workspaces",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "migration_backup_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "six_demo_initiatives",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "demo_does_not_change_existing_data",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "explicit_demo_is_idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "attention_counts_two",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "upcoming_excludes_overdue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale_demo_detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "active_requires_it_owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "active_requires_customer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "active_requires_deadline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "active_requires_status_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "create_persists_all_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "create_records_initial_deadline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new_record_does_not_change_legacy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "deadline_change_requires_reason",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "deadline_change_preserves_baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "deadline_history_contains_both_dates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "blocked_requires_explanation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "blocked_risk_consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "completion_requires_100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "done_hidden_from_active",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "done_filter_shows_completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rename_does_not_refresh_status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "explicit_review_refreshes_status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "search_customer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "system_filter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unassigned_filter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "priority_filter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sorting_deadline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "board_groups_and_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archive_preserves_record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "archive_view",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unarchive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "presentation_uses_selected_not_all",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "presentation_hides_navigation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "presentation_detail_has_next_step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "presentation_keyboard_next",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "presentation_keyboard_previous",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "presentation_escape_returns_registry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "presentation_readonly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "export_includes_initiatives",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "import_roundtrip_initiatives",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "import_rejects_duplicate_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "import_rejects_invalid_date",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conflict_prevents_mutation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dirty_form_tracked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "discard_does_not_save",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "people_still_show_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "goals_still_render",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shared_goal_assignment_still_renders",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shared_goal_picker_still_opens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "return_from_goals_restores_section",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_prior_data_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "storage_reload_roundtrip_adapter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile_shows_cards_not_table",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile_detail_fullwidth",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile_status_save",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile_board_single_column",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_page_overflow_320",
+      "passed": true,
+      "detail": {
+        "body": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "no_page_overflow_360",
+      "passed": true,
+      "detail": {
+        "body": 360,
+        "width": 360
+      }
+    },
+    {
+      "name": "no_page_overflow_390",
+      "passed": true,
+      "detail": {
+        "body": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "no_page_overflow_430",
+      "passed": true,
+      "detail": {
+        "body": 430,
+        "width": 430
+      }
+    },
+    {
+      "name": "no_page_overflow_768",
+      "passed": true,
+      "detail": {
+        "body": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "no_page_overflow_1024",
+      "passed": true,
+      "detail": {
+        "body": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "no_page_overflow_1440",
+      "passed": true,
+      "detail": {
+        "body": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "no_page_overflow_1920",
+      "passed": true,
+      "detail": {
+        "body": 1920,
+        "width": 1920
+      }
+    },
+    {
+      "name": "compatibility_without_hasown_at_resizeobserver",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_javascript_errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "ui_full_json_download",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_import_file_input",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "user_html_escaped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "csv_formula_escaped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "csv_includes_description_and_systems",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "presentation_paginates_six",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "overview_second_page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "drawer_draft_survives_resize",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "registry_route_dispatch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "module_context_restored",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "menu_archive_closes_overlay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quota_error_rolls_back_initiatives",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quota_error_visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "extra_no_runtime_errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "page_errors": [],
+  "passed": 86,
+  "total": 86,
+  "limitations": [
+    "HTTP navigation in the test browser was blocked by environment policy; HTML was loaded with set_content.",
+    "Storage persistence, migration and failure tests use an injected in-memory Storage test adapter, not native persistent storage. The delivered HTML has no adapter.",
+    "No Safari/WebKit, physical iPhone or Android device testing.",
+    "The live user host refused the connection from this environment; the supplied v0.8.2 file was used as baseline."
+  ]
+}
