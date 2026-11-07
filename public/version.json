@@ -1,0 +1,10 @@
+{
+  "version": "0.10.1",
+  "html_sha256": "d235e1a3c33348e07c8010420b5c515e6abe926cc8081658103754bc5d3ac501",
+  "features": [
+    "initiatives-gantt",
+    "gantt-presentation",
+    "initiative-start-date"
+  ],
+  "entry": "/#/initiatives/gantt"
+}
