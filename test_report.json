@@ -1,470 +1,938 @@
 {
-  "version": "0.9",
-  "engine": "Chromium (Playwright)",
-  "storage": "Injected in-memory Storage test adapter; real navigation is blocked by environment policy. No Safari/WebKit or physical phones tested.",
-  "checks": [
-    {
-      "name": "v082_baseline_ready",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "migration_preserves_people_goals_structures",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "new_initiatives_empty_after_migration",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "three_separate_workspaces",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "migration_backup_exists",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "six_demo_initiatives",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "demo_does_not_change_existing_data",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "explicit_demo_is_idempotent",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "attention_counts_two",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "upcoming_excludes_overdue",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "stale_demo_detected",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "active_requires_it_owner",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "active_requires_customer",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "active_requires_deadline",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "active_requires_status_text",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "create_persists_all_fields",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "create_records_initial_deadline",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "new_record_does_not_change_legacy",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "deadline_change_requires_reason",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "deadline_change_preserves_baseline",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "deadline_history_contains_both_dates",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "blocked_requires_explanation",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "blocked_risk_consistent",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "completion_requires_100",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "done_hidden_from_active",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "done_filter_shows_completed",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "rename_does_not_refresh_status",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "explicit_review_refreshes_status",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "search_customer",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "system_filter",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "unassigned_filter",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "priority_filter",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "sorting_deadline",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "board_groups_and_counts",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "archive_preserves_record",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "archive_view",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "unarchive",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "presentation_uses_selected_not_all",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "presentation_hides_navigation",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "presentation_detail_has_next_step",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "presentation_keyboard_next",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "presentation_keyboard_previous",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "presentation_escape_returns_registry",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "presentation_readonly",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "export_includes_initiatives",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "import_roundtrip_initiatives",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "import_rejects_duplicate_ids",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "import_rejects_invalid_date",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "conflict_prevents_mutation",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "dirty_form_tracked",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "discard_does_not_save",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "people_still_show_map",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "goals_still_render",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "shared_goal_assignment_still_renders",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "shared_goal_picker_still_opens",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "return_from_goals_restores_section",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "all_prior_data_unchanged",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "storage_reload_roundtrip_adapter",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "mobile_shows_cards_not_table",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "mobile_detail_fullwidth",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "mobile_status_save",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "mobile_board_single_column",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "no_page_overflow_320",
-      "passed": true,
-      "detail": {
-        "body": 320,
-        "width": 320
-      }
-    },
-    {
-      "name": "no_page_overflow_360",
-      "passed": true,
-      "detail": {
-        "body": 360,
-        "width": 360
-      }
-    },
-    {
-      "name": "no_page_overflow_390",
-      "passed": true,
-      "detail": {
-        "body": 390,
-        "width": 390
-      }
-    },
-    {
-      "name": "no_page_overflow_430",
-      "passed": true,
-      "detail": {
-        "body": 430,
-        "width": 430
-      }
-    },
-    {
-      "name": "no_page_overflow_768",
-      "passed": true,
-      "detail": {
-        "body": 768,
-        "width": 768
-      }
-    },
-    {
-      "name": "no_page_overflow_1024",
-      "passed": true,
-      "detail": {
-        "body": 1024,
-        "width": 1024
-      }
-    },
-    {
-      "name": "no_page_overflow_1440",
-      "passed": true,
-      "detail": {
-        "body": 1440,
-        "width": 1440
-      }
-    },
-    {
-      "name": "no_page_overflow_1920",
-      "passed": true,
-      "detail": {
-        "body": 1920,
-        "width": 1920
-      }
-    },
-    {
-      "name": "compatibility_without_hasown_at_resizeobserver",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "no_javascript_errors",
-      "passed": true,
-      "detail": []
-    },
-    {
-      "name": "ui_full_json_download",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "actual_import_file_input",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "user_html_escaped",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "csv_formula_escaped",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "csv_includes_description_and_systems",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "presentation_paginates_six",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "overview_second_page",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "drawer_draft_survives_resize",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "registry_route_dispatch",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "module_context_restored",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "menu_archive_closes_overlay",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "quota_error_rolls_back_initiatives",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "quota_error_visible",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "extra_no_runtime_errors",
-      "passed": true,
-      "detail": []
-    }
+  "release": "0.11",
+  "basis": "Provided clusterboard_v0.10.1.html; deployed website not accessed or modified in this iteration",
+  "html_sha256": "d5b25ef6fb8c27d71f5e2625636ccb60fa263d741a7cbbb3f1d779a2bf684968",
+  "checks": 131,
+  "passed": 131,
+  "failed": 0,
+  "browser": "Chromium via Playwright",
+  "execution": "HTML via set_content; isolated test-only in-memory localStorage/sessionStorage adapter. No adapter is included in the delivered HTML.",
+  "viewports_css_pixels": [
+    "320x740",
+    "390x844",
+    "768x1024",
+    "820x1180",
+    "1366x768",
+    "1440x900"
   ],
-  "page_errors": [],
-  "passed": 86,
-  "total": 86,
   "limitations": [
-    "HTTP navigation in the test browser was blocked by environment policy; HTML was loaded with set_content.",
-    "Storage persistence, migration and failure tests use an injected in-memory Storage test adapter, not native persistent storage. The delivered HTML has no adapter.",
-    "No Safari/WebKit, physical iPhone or Android device testing.",
-    "The live user host refused the connection from this environment; the supplied v0.8.2 file was used as baseline."
+    "Not tested on Safari/WebKit or physical phones",
+    "No real cross-browser/device persistence or server synchronization tested",
+    "No live server deployment or Git push",
+    "Sampled contrast and keyboard behavior only, not comprehensive WCAG certification",
+    "Expert scenario verification, not user research"
+  ],
+  "results": [
+    {
+      "test": "UX01 all employees visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX01 search by name",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX01 search by role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX01 search by team",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX01 empty result explained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX01 clear restores all",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX02 person card has four related sections",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX02 typing does not alter model",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX02 shared identity saved without new person",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX02 positions and goal references preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX03 version visible in directory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX03 creating identity allowed in current view",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX03 future label and current untouched",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX03 responsibilities version visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX03 dictionary explicit save",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 pristine product not dirty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 pristine form closes immediately",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 product Escape protected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 stay preserves text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 product Cancel protected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 discard changes no products",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 re-rendering owner picker retains dirty state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 product commits after Save",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 pristine assignments not dirty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 assignment Escape protected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 checked participants retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Shared goal adds participant not new owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX05 comment visible before scrolling desktop",
+      "passed": true,
+      "detail": {
+        "x": 985,
+        "y": 542.015625,
+        "width": 363,
+        "height": 68
+      }
+    },
+    {
+      "test": "UX05 parameters collapsed and execution team separate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX08 goal error attached to comment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX12 dirty status visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX05 goal progress persisted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX12 saved status resets",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 goal input survives resize",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX04 goal remains dirty after resize",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX08 all missing initiative fields shown together",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "test": "UX08 first invalid field focused",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX08 working status marked required",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX08 initiative saves after corrections",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX09 quick update has only four initially visible fields",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "test": "UX09 quick update saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX08 period change requires inline reason",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Period history retains previous and new date",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX06 at least four registry rows visible desktop",
+      "passed": true,
+      "detail": {
+        "rows": 4,
+        "first": {
+          "x": 273,
+          "y": 371.578125,
+          "width": 1068,
+          "height": 87.484375
+        }
+      }
+    },
+    {
+      "test": "UX06 at least four goal rows visible desktop",
+      "passed": true,
+      "detail": {
+        "rows": 4,
+        "first": {
+          "x": 273,
+          "y": 406.109375,
+          "width": 1068,
+          "height": 64
+        }
+      }
+    },
+    {
+      "test": "UX06 complete goal card in first phone viewport",
+      "passed": true,
+      "detail": {
+        "first": {
+          "x": 22,
+          "y": 465.0625,
+          "width": 346,
+          "height": 185.421875
+        },
+        "nav": {
+          "x": 0,
+          "y": 782,
+          "width": 390,
+          "height": 62
+        }
+      }
+    },
+    {
+      "test": "UX06 complete initiative card in first phone viewport",
+      "passed": true,
+      "detail": {
+        "first": {
+          "x": 12,
+          "y": 337,
+          "width": 366,
+          "height": 383.796875
+        },
+        "nav": {
+          "x": 0,
+          "y": 782,
+          "width": 390,
+          "height": 62
+        }
+      }
+    },
+    {
+      "test": "UX06 Gantt scale controls are readable on phone",
+      "passed": true,
+      "detail": {
+        "x": 24,
+        "y": 337.875,
+        "width": 83.25,
+        "height": 44
+      }
+    },
+    {
+      "test": "UX10 exact Gantt presentation action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX10 separate cards action",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX10 presentation is read-only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX11 normal map offers plan and transfer actions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX11 exact position in future inspector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX11 position edits isolated to future",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX11 presentation has no edit controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX11 team contextual settings on normal map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "No document overflow 320 people/people",
+      "passed": true,
+      "detail": {
+        "w": 320,
+        "sw": 320
+      }
+    },
+    {
+      "test": "No document overflow 320 goals/streams",
+      "passed": true,
+      "detail": {
+        "w": 320,
+        "sw": 320
+      }
+    },
+    {
+      "test": "No document overflow 320 initiatives/registry",
+      "passed": true,
+      "detail": {
+        "w": 320,
+        "sw": 320
+      }
+    },
+    {
+      "test": "No document overflow 320 initiatives/gantt",
+      "passed": true,
+      "detail": {
+        "w": 320,
+        "sw": 320
+      }
+    },
+    {
+      "test": "No document overflow 390 people/people",
+      "passed": true,
+      "detail": {
+        "w": 390,
+        "sw": 390
+      }
+    },
+    {
+      "test": "No document overflow 390 goals/streams",
+      "passed": true,
+      "detail": {
+        "w": 390,
+        "sw": 390
+      }
+    },
+    {
+      "test": "No document overflow 390 initiatives/registry",
+      "passed": true,
+      "detail": {
+        "w": 390,
+        "sw": 390
+      }
+    },
+    {
+      "test": "No document overflow 390 initiatives/gantt",
+      "passed": true,
+      "detail": {
+        "w": 390,
+        "sw": 390
+      }
+    },
+    {
+      "test": "No document overflow 768 people/people",
+      "passed": true,
+      "detail": {
+        "w": 768,
+        "sw": 768
+      }
+    },
+    {
+      "test": "No document overflow 768 goals/streams",
+      "passed": true,
+      "detail": {
+        "w": 768,
+        "sw": 768
+      }
+    },
+    {
+      "test": "No document overflow 768 initiatives/registry",
+      "passed": true,
+      "detail": {
+        "w": 768,
+        "sw": 768
+      }
+    },
+    {
+      "test": "No document overflow 768 initiatives/gantt",
+      "passed": true,
+      "detail": {
+        "w": 768,
+        "sw": 768
+      }
+    },
+    {
+      "test": "No document overflow 820 people/people",
+      "passed": true,
+      "detail": {
+        "w": 820,
+        "sw": 820
+      }
+    },
+    {
+      "test": "No document overflow 820 goals/streams",
+      "passed": true,
+      "detail": {
+        "w": 820,
+        "sw": 820
+      }
+    },
+    {
+      "test": "No document overflow 820 initiatives/registry",
+      "passed": true,
+      "detail": {
+        "w": 820,
+        "sw": 820
+      }
+    },
+    {
+      "test": "No document overflow 820 initiatives/gantt",
+      "passed": true,
+      "detail": {
+        "w": 820,
+        "sw": 820
+      }
+    },
+    {
+      "test": "No document overflow 1366 people/people",
+      "passed": true,
+      "detail": {
+        "w": 1366,
+        "sw": 1366
+      }
+    },
+    {
+      "test": "No document overflow 1366 goals/streams",
+      "passed": true,
+      "detail": {
+        "w": 1366,
+        "sw": 1366
+      }
+    },
+    {
+      "test": "No document overflow 1366 initiatives/registry",
+      "passed": true,
+      "detail": {
+        "w": 1366,
+        "sw": 1366
+      }
+    },
+    {
+      "test": "No document overflow 1366 initiatives/gantt",
+      "passed": true,
+      "detail": {
+        "w": 1366,
+        "sw": 1366
+      }
+    },
+    {
+      "test": "No document overflow 1440 people/people",
+      "passed": true,
+      "detail": {
+        "w": 1440,
+        "sw": 1440
+      }
+    },
+    {
+      "test": "No document overflow 1440 goals/streams",
+      "passed": true,
+      "detail": {
+        "w": 1440,
+        "sw": 1440
+      }
+    },
+    {
+      "test": "No document overflow 1440 initiatives/registry",
+      "passed": true,
+      "detail": {
+        "w": 1440,
+        "sw": 1440
+      }
+    },
+    {
+      "test": "No document overflow 1440 initiatives/gantt",
+      "passed": true,
+      "detail": {
+        "w": 1440,
+        "sw": 1440
+      }
+    },
+    {
+      "test": "UX12 rejected storage write rolls back person",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX12 retry after storage error succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "No uncaught JavaScript errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "test": "Migration v0.10.1 preserves people",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Migration v0.10.1 preserves current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Migration v0.10.1 preserves future",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Migration v0.10.1 preserves goals",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Migration v0.10.1 preserves goalEvents",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Migration v0.10.1 preserves initiatives",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Migration v0.10.1 preserves initiativeEvents",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Migration storage key unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Dirty product protected on backdrop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Backdrop stay keeps value",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Goal protected on module navigation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Stay retains old module and draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Discard dialog keyboard focus contained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Product rejected write rolls back full model",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Product rejected write retains inputs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Product retry after storage failure saves",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Goal rejected write rolls back data and preserves draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Goal retry writes correct progress",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "UX07 contrast .goal-date",
+      "passed": true,
+      "detail": {
+        "sel": ".goal-date",
+        "color": "rgb(82, 99, 122)",
+        "bg": "rgb(244, 248, 255)",
+        "size": 12,
+        "text": "31.12",
+        "contrast": 5.76
+      }
+    },
+    {
+      "test": "UX07 readable font .goal-date",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "test": "UX07 contrast .goal-gridrow.header",
+      "passed": true,
+      "detail": {
+        "sel": ".goal-gridrow.header",
+        "color": "rgb(82, 99, 122)",
+        "bg": "rgb(245, 248, 252)",
+        "size": 12,
+        "text": "ЦЕЛЬ / РЕЗУЛЬТАТ\nВЛАДЕЛЕЦ\nПРОГРЕСС\nСРОК\nСОСТОЯНИЕ",
+        "contrast": 5.76
+      }
+    },
+    {
+      "test": "UX07 readable font .goal-gridrow.header",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "test": "UX07 contrast .goal-titleline small",
+      "passed": true,
+      "detail": {
+        "sel": ".goal-titleline small",
+        "color": "rgb(83, 99, 122)",
+        "bg": "rgb(244, 248, 255)",
+        "size": 12,
+        "text": "Core API · 2 участн.",
+        "contrast": 5.74
+      }
+    },
+    {
+      "test": "UX07 readable font .goal-titleline small",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "test": "UX07 contrast .g-status",
+      "passed": true,
+      "detail": {
+        "sel": ".g-status",
+        "color": "rgb(146, 81, 23)",
+        "bg": "rgb(255, 242, 223)",
+        "size": 12,
+        "text": "Под риском",
+        "contrast": 5.57
+      }
+    },
+    {
+      "test": "UX07 readable font .g-status",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "test": "UX07 contrast .goal-titleline b",
+      "passed": true,
+      "detail": {
+        "sel": ".goal-titleline b",
+        "color": "rgb(38, 62, 90)",
+        "bg": "rgb(244, 248, 255)",
+        "size": 14,
+        "text": "Сократить Lead Time платежного API на 20%",
+        "contrast": 10.27
+      }
+    },
+    {
+      "test": "UX07 readable font .goal-titleline b",
+      "passed": true,
+      "detail": 14
+    },
+    {
+      "test": "UX07 contrast .c9-table th",
+      "passed": true,
+      "detail": {
+        "sel": ".c9-table th",
+        "color": "rgb(78, 96, 118)",
+        "bg": "rgb(245, 248, 252)",
+        "size": 12,
+        "text": "",
+        "contrast": 6.05
+      }
+    },
+    {
+      "test": "UX07 contrast .c9-date",
+      "passed": true,
+      "detail": {
+        "sel": ".c9-date",
+        "color": "rgb(76, 93, 115)",
+        "bg": "rgb(255, 255, 255)",
+        "size": 13,
+        "text": "13 нояб. 2026 г.",
+        "contrast": 6.73
+      }
+    },
+    {
+      "test": "UX07 contrast .c9-date-meta",
+      "passed": true,
+      "detail": {
+        "sel": ".c9-date-meta",
+        "color": "rgb(83, 99, 122)",
+        "bg": "rgb(255, 255, 255)",
+        "size": 12,
+        "text": "Через 6 дн.",
+        "contrast": 6.12
+      }
+    },
+    {
+      "test": "UX07 contrast .c9-updated",
+      "passed": true,
+      "detail": {
+        "sel": ".c9-updated",
+        "color": "rgb(82, 99, 122)",
+        "bg": "rgb(255, 255, 255)",
+        "size": 12,
+        "text": "06 нояб. · требует внимания",
+        "contrast": 6.13
+      }
+    },
+    {
+      "test": "UX07 contrast .c9-titlebutton",
+      "passed": true,
+      "detail": {
+        "sel": ".c9-titlebutton",
+        "color": "rgb(38, 62, 90)",
+        "bg": "rgb(255, 255, 255)",
+        "size": 14,
+        "text": "Запуск нового сценария оплаты в приложении",
+        "contrast": 10.94
+      }
+    },
+    {
+      "test": "UX07 contrast .c9-pill.p-P0",
+      "passed": true,
+      "detail": {
+        "sel": ".c9-pill.p-P0",
+        "color": "rgb(163, 51, 48)",
+        "bg": "rgb(255, 237, 237)",
+        "size": 10,
+        "text": "P0",
+        "contrast": 6.05
+      }
+    },
+    {
+      "test": "UX07 contrast .c9-pill.stage-in_progress",
+      "passed": true,
+      "detail": {
+        "sel": ".c9-pill.stage-in_progress",
+        "color": "rgb(33, 91, 144)",
+        "bg": "rgb(234, 243, 255)",
+        "size": 11,
+        "text": "В работе",
+        "contrast": 6.33
+      }
+    },
+    {
+      "test": "UX06 first two Gantt tasks fully above mobile navigation",
+      "passed": true,
+      "detail": {
+        "rows": [
+          {
+            "x": 13,
+            "y": 548.875,
+            "width": 364,
+            "height": 113,
+            "top": 548.875,
+            "right": 377,
+            "bottom": 661.875,
+            "left": 13
+          },
+          {
+            "x": 13,
+            "y": 661.875,
+            "width": 364,
+            "height": 113,
+            "top": 661.875,
+            "right": 377,
+            "bottom": 774.875,
+            "left": 13
+          }
+        ],
+        "nav": 782
+      }
+    },
+    {
+      "test": "UX12 mobile 44px target [data-c9=\"new\"]",
+      "passed": true,
+      "detail": {
+        "x": 223.1875,
+        "y": 116,
+        "width": 154.8125,
+        "height": 44
+      }
+    },
+    {
+      "test": "UX12 mobile 44px target .c9-filter-toggle",
+      "passed": true,
+      "detail": {
+        "x": 266.390625,
+        "y": 179,
+        "width": 102.609375,
+        "height": 44
+      }
+    },
+    {
+      "test": "UX12 mobile 44px target .c10-toolbar [data-c10=\"scale\"]",
+      "passed": true,
+      "detail": {
+        "x": 24,
+        "y": 337.875,
+        "width": 83.25,
+        "height": 44
+      }
+    },
+    {
+      "test": "UX07 Gantt metadata contrast .c10-person",
+      "passed": true,
+      "detail": {
+        "sel": ".c10-person",
+        "color": "rgb(82, 99, 122)",
+        "bg": "rgb(255, 255, 255)",
+        "size": 12,
+        "text": "Илья Воронин",
+        "contrast": 6.13
+      }
+    },
+    {
+      "test": "UX07 Gantt metadata contrast .c10-bar-note",
+      "passed": true,
+      "detail": {
+        "sel": ".c10-bar-note",
+        "color": "rgb(82, 99, 122)",
+        "bg": "rgb(255, 255, 255)",
+        "size": 11,
+        "text": "23.10 — 13.11 · есть риск",
+        "contrast": 6.13
+      }
+    },
+    {
+      "test": "UX12 concurrent tab conflict blocks write",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Extra suite no JavaScript errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "test": "New goal title gets inline required error",
+      "passed": true
+    },
+    {
+      "test": "New draft goal created with stable goal schema",
+      "passed": true
+    },
+    {
+      "test": "Copy goal cannot silently replace a dirty editor",
+      "passed": true
+    },
+    {
+      "test": "Stay keeps draft after Copy",
+      "passed": true
+    },
+    {
+      "test": "Team explicit save edits future only",
+      "passed": true
+    }
   ]
 }

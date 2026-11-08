@@ -1,0 +1,7 @@
+{
+  "version": "0.11",
+  "build": "gantt-release-fix-1",
+  "htmlSha256": "d5b25ef6fb8c27d71f5e2625636ccb60fa263d741a7cbbb3f1d779a2bf684968",
+  "entrypoint": "index.html",
+  "ganttRoute": "#/initiatives/gantt"
+}
